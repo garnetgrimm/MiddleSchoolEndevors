@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;SchoolSim&apos; to &apos;SlickExcelBlender&apos;&#x0D;&#x0A;- Original element: &apos;SchoolSim&apos;&#x0D;&#x0A;- Renamed element: &apos;SchoolSim&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;SchoolSim&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=SchoolSim" name="SlickExcelBlender" references="true" stamp="1467115130359" version="1.0"/>
+</session>

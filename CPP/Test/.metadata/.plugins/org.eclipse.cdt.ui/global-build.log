@@ -1,0 +1,12 @@
+20:00:55 **** Incremental Build of configuration Debug for project DisplayImage ****
+Info: Internal Builder is used for build
+g++ "-IC:\\OpenCv\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DisplayImage.o" "..\\src\\DisplayImage.cpp" 
+g++ "-LC:\\OpenCv\\opencv\\release\\lib" -o DisplayImage.exe "src\\DisplayImage.o" "src\\serial_test.o" -llibopencv_core2413 -llibopencv_imgproc2413 -llibopencv_highgui2413 
+-mwindows 
+Cannot run program "-mwindows": Launching failed
+
+Error: Program "-mwindows" not found in PATH
+PATH=[C:\MinGW\bin;C:\MinGW\msys\1.0\bin;C:/Program Files/Java/jdk1.8.0_91/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_91/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_91/bin/../jre/lib/amd64;C:\WINDOWS\system32;C:\Program Files\Java\jdk1.8.0_91\bin;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\MinGW\bin;C:\Lua\src;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\WebDev\RailsInstaller\Git\cmd;C:\Ruby23\bin;C:\WebDev\php;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\git\cmd;C:\Program Files (x86)\Git\cmd;C:\Users\Garnet Grimm\AppData\Local\Programs\Python\Python35-32;C:\Users\Garnet Grimm\AppData\Local\Programs\Python\Python35-32\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\OpenCv\opencv\release\bin;C:\Program Files\nodejs\;C:\Ruby23\bin;C:\Program Files\CMake\bin;C:\Users\Garnet Grimm\AppData\Local\Microsoft\WindowsApps;C:\Users\Garnet Grimm\AppData\Roaming\npm;C:\Users\Garnet Grimm\eclipse\cpp-mars\eclipse]
+
+Info: Nothing to build for DisplayImage
+Info: Nothing to build for DisplayImage

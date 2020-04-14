@@ -1,0 +1,33 @@
+package main;
+
+import java.awt.BasicStroke;
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.FontMetrics;
+import java.awt.Graphics2D;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+
+public class DrawImage {
+  static public void draw(String[][] ImageArray, String saveLoc) {
+    try {
+      int width = 200, height = 200;
+
+      BufferedImage bi = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
+
+      Graphics2D ig2 = bi.createGraphics();
+      
+      System.out.println(ImageArray[0][0]);
+
+
+      ImageIO.write(bi, "PNG", new File(saveLoc + ".png"));
+      
+    } catch (IOException ie) {
+      ie.printStackTrace();
+    }
+
+  }
+}

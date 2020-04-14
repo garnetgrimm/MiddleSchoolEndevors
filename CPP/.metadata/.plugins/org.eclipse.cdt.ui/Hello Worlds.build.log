@@ -1,0 +1,9 @@
+12:52:12 **** Incremental Build of configuration Debug for project Hello Worlds ****
+make all 
+Cannot run program "make": Launching failed
+
+Error: Program "make" not found in PATH
+PATH=[C:\Users\Garnet Grimm\Desktop\eclipse;C:/Program Files (x86)/Java/jre1.8.0_73/bin/client;C:/Program Files (x86)/Java/jre1.8.0_73/bin;C:/Program Files (x86)/Java/jre1.8.0_73/lib/i386;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Skype\Phone\;C:\HaxeToolkit\haxe\;C:\HaxeToolkit\neko;C:\Users\Garnet Grimm\AppData\Local\Programs\Python\Python35-32;C:\Users\Garnet Grimm\AppData\Local\Programs\Python\Python35-32\Scripts]
+
+12:52:12 Build Finished (took 107ms)
+

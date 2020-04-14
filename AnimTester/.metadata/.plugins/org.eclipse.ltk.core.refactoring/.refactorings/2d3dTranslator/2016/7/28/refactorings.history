@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;main.DrawDeptj&apos; to &apos;DrawDepth&apos;&#x0D;&#x0A;- Original project: &apos;2d3dTranslator&apos;&#x0D;&#x0A;- Original element: &apos;main.DrawDeptj&apos;&#x0D;&#x0A;- Renamed element: &apos;main.DrawDepth&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;DrawDeptj&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;main{DrawDeptj.java[DrawDeptj" matchStrategy="1" name="DrawDepth" qualified="false" references="true" similarDeclarations="false" stamp="1467828945684" textual="false" version="1.0"/>
+</session>

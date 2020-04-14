@@ -1,0 +1,44 @@
+package main;
+
+import java.awt.AlphaComposite;
+import java.awt.Color;
+import java.awt.Graphics2D;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+
+public class DrawImage {
+  static public void draw(BufferedImage img, String[][] ImageArray, String saveLoc) {
+    try {
+      int width = img.getWidth(), height = img.getHeight();
+
+      BufferedImage bi = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
+
+      Graphics2D ig2 = bi.createGraphics();
+      
+      for(int x = 0; x < img.getWidth(); x++) {
+    	  for(int y = 0; y < img.getHeight(); y++) {
+    		  String[] tokens = ImageArray[x][y].split(",");
+    		  int r = Integer.parseInt(tokens[0]);
+    		  int g = Integer.parseInt(tokens[1]);
+    		  int b = Integer.parseInt(tokens[2]);
+    		  float a = Integer.parseInt(tokens[3]);
+    		  
+    		  if(a != 0) r += a;
+    		  
+    		  ig2.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, a / 255));
+    		  ig2.setColor(new Color(r,g,b));
+    		  ig2.fillRect(x, y, 1, 1);
+    	  }
+      }
+
+      ImageIO.write(bi, "PNG", new File(saveLoc + "0.png"));
+      
+    } catch (IOException ie) {
+      ie.printStackTrace();
+    }
+
+  }
+}

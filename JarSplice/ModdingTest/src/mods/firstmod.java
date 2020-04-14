@@ -1,0 +1,9 @@
+package mods;
+import bin.item;
+
+public class firstmod { 
+	public static void onStart() {
+		item myItem = new item("Phone", 8, 2);
+		System.out.println(myItem.title);
+	}
+}

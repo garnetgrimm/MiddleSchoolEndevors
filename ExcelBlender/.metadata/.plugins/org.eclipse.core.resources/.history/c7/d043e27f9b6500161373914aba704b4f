@@ -1,0 +1,44 @@
+package main;
+
+import java.awt.Color;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+
+public class ImageHandler {
+	
+	public static BufferedImage FileToBufferedImage(File f) {
+		try {
+			BufferedImage in;
+			in = ImageIO.read(f);
+			//BufferedImage newImage = new BufferedImage(in.getWidth(), in.getHeight(), BufferedImage.TYPE_INT_ARGB);
+			return in;
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+	
+	public static String[][] BufferedImageToArray(BufferedImage img) {
+		int w = img.getWidth();
+		int h = img.getHeight();
+		
+		String[][] pixels = new String[w][h];
+
+		for( int i = 0; i < w; i++ ) {
+		    for( int j = 0; j < h; j++ ) {
+		    	Color c = new Color(img.getRGB(i, j), true);
+	            int r = c.getRed();
+	            int g = c.getGreen();
+	            int b = c.getBlue();
+	            int a = c.getAlpha();
+	            String rgba = r + "," + g + "," + b + "," + a;
+	            System.out.println(c);
+		        pixels[i][j] = rgba;
+		    }
+		}
+		return pixels;
+	}
+}

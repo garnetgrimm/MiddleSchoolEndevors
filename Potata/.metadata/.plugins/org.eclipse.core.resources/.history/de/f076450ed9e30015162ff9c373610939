@@ -1,0 +1,67 @@
+package main;
+
+import org.newdawn.slick.Color;
+import org.newdawn.slick.GameContainer;
+import org.newdawn.slick.Graphics;
+import org.newdawn.slick.Input;
+import org.newdawn.slick.SlickException;
+import org.newdawn.slick.state.BasicGameState;
+import org.newdawn.slick.state.StateBasedGame;
+import org.newdawn.slick.tiled.TiledMap;
+
+import networking.Client;
+import networking.Server;
+
+public class GameState extends BasicGameState {
+
+	public static int P1X, P1Dir = 0;
+	public static int P2X, P2Dir = 0;
+	TiledMap map;
+	
+	@Override
+	public void init(GameContainer container, StateBasedGame menu) throws SlickException {
+		map = new TiledMap("res/Level1.tmx");
+		Chars.init();
+		Armor.init();
+		Health.init();
+	}
+
+	@Override
+	public void update(GameContainer container, StateBasedGame menu, int delta) throws SlickException {
+		Health.update();
+		Armor.update(delta);
+		
+		if (container.getInput().isKeyDown(Input.KEY_A)) { P1Dir = -1; }
+		else if (container.getInput().isKeyDown(Input.KEY_D)) { P1Dir = 1; }
+		else P1Dir = 0;
+		
+		if (container.getInput().isKeyPressed(Input.KEY_S)) { Server.Start(); }
+		if (container.getInput().isKeyPressed(Input.KEY_C)) { Client.Start(); }
+		
+		Armor.P1SwordChange = container.getInput().isMouseButtonDown(Input.MOUSE_LEFT_BUTTON);
+		
+		if(P1Dir == 1) P1X += 1;
+		if(P1Dir == -1) P1X += -1;
+
+		Chars.update(delta);
+		
+		if(P1X <= 0) { P1X = 0; P1Dir = 0; }
+		if(P1X >= 430) { P1X = 430; P1Dir = 0; }
+	}
+	
+	@Override
+	public void render(GameContainer container, StateBasedGame menu, Graphics g) throws SlickException {
+		g.scale(10, 10);
+		g.setBackground(new Color(0x8D7FBA));
+		map.render(0 - P1X, 30);
+		Health.render(container, g);
+		Armor.render(container, g);
+		Chars.render(container, g);	
+	}
+
+	@Override
+	public int getID() {
+		return 0;
+	}
+
+}

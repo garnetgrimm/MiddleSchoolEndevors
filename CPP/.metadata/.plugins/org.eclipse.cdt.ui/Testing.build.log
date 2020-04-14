@@ -1,0 +1,10 @@
+21:02:00 **** Incremental Build of configuration Debug for project Testing ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+i686-pc-mingw32-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+/bin/sh: i686-pc-mingw32-g++: command not found
+make: *** [main.o] Error 127
+
+21:02:01 Build Finished (took 1s.89ms)
+

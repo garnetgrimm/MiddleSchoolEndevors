@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Mp3AlbumArtExtractor/src/Cage The Elephant - Shake Me Down.mp3&apos; to &apos;ExampleSong.mp3&apos;" description="Rename resource &apos;Cage The Elephant - Shake Me Down.mp3&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Cage The Elephant - Shake Me Down.mp3" name="ExampleSong.mp3" stamp="1468507009966" updateReferences="true"/>
+</session>

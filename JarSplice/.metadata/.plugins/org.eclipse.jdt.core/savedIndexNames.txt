@@ -1,0 +1,7 @@
+INDEX VERSION 1.127+C:\Users\Garnet Grimm\Documents\Eclipse\JarSplice\.metadata\.plugins\org.eclipse.jdt.core
+3766788447.index
+3422180813.index
+1953588849.index
+137624701.index
+2584725886.index
+2501520862.index

@@ -1,0 +1,10 @@
+package main;
+
+import java.io.File;
+
+public class StringHandler {
+	public static String getSaveLocFromFile(File f) {
+		String path = f.toString();
+		return path;
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;net.obviam.driodz&apos; to &apos;net.obviam.droidz&apos;&#x0D;&#x0A;- Original project: &apos;Trash_Dash&apos;&#x0D;&#x0A;- Original element: &apos;Trash_Dash/src/net.obviam.driodz&apos;&#x0D;&#x0A;- Renamed element: &apos;Trash_Dash/src/net.obviam.droidz&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;net.obviam.driodz&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;net.obviam.driodz" name="net.obviam.droidz" qualified="false" references="true" stamp="1475890907360" textual="false" version="1.0"/>
+</session>

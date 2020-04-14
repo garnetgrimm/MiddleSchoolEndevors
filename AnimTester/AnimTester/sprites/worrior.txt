@@ -1,0 +1,10 @@
+XSIZE: 22
+YSIZE: 33
+DEFAULTANIM: walk
+SCALE: 10
+ANIMSPEED: 2
+MOVESPEED: 3
+
+KEYBINDS: A=walk D=stand
+
+ANIMS: walk=2,3 stand=1 idle=2

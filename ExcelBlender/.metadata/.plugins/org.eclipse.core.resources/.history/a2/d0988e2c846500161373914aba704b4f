@@ -1,0 +1,15 @@
+package main;
+
+import java.io.File;
+
+public class StringHandler {
+	public static String getSaveLocFromFile(File f) {
+		String prepath = f.toString();
+		String[] tokens = prepath.split("\\");
+		String postpath = "";
+		for(int i = 0; i < tokens.length - 1; i++) {
+			postpath += tokens[i];
+		}
+		return postpath;
+	}
+}

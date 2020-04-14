@@ -1,0 +1,9 @@
+06:55:30 **** Incremental Build of configuration Debug for project Camera ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Main.o "..\\Main.cpp" 
+g++ -o Camera.exe Main.o 
+c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../libmingw32.a(main.o):(.text.startup+0xa7): undefined reference to `WinMain@16'
+collect2.exe: error: ld returned 1 exit status
+
+06:55:35 Build Finished (took 5s.74ms)
+

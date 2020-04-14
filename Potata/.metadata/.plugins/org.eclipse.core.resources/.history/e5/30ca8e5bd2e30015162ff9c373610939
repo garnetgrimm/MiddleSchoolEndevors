@@ -1,0 +1,43 @@
+package main;
+
+import org.newdawn.slick.Animation;
+import org.newdawn.slick.GameContainer;
+import org.newdawn.slick.Graphics;
+import org.newdawn.slick.SlickException;
+import org.newdawn.slick.SpriteSheet;
+
+import networking.Server;
+
+public class Chars {
+
+	public static SpriteSheet RawTato1;
+	public static SpriteSheet RawTato2;
+	
+	public static Animation Tato1;
+	public static Animation Tato2;
+	
+	public static int P2DrawX = 39 - (GameState.P1X / 5) + GameState.P2X / 5;
+	
+	public static void init() throws SlickException {
+		RawTato1 = new SpriteSheet("res/potata.png", 36, 21);
+		RawTato2 = new SpriteSheet("res/potata.png", 36, 21);
+		
+		Tato1 = new Animation(RawTato1, 200);
+		Tato2 = new Animation(RawTato2 ,200);
+	}
+
+	public static void update(int delta) {
+		P2DrawX = 39 - GameState.P1X + GameState.P2X;
+	}
+
+	public static void render(GameContainer container, Graphics g) throws SlickException {
+		g.scale(0.2f, 0.2f);
+		Tato1.draw(200, 200);
+	
+		if(Server.Started) {
+		Tato2.draw(P2DrawX, 200);
+		g.scale(1, 1);
+		}
+	}
+	
+}

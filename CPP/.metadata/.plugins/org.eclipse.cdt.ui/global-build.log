@@ -1,0 +1,9 @@
+21:21:29 **** Incremental Build of configuration Debug for project Test ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Start.o" "..\\src\\Start.cpp" 
+g++ -o Test.exe "src\\Start.o" -lglu32 -lopengl32 -lfreeglut 
+19:20:59 **** Incremental Build of configuration Debug for project Test ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Start.o" "..\\src\\Start.cpp" 
+g++ -o Test.exe "src\\Start.o" -lglu32 -lopengl32 -lfreeglut 
+Info: Nothing to build for HelloWorld

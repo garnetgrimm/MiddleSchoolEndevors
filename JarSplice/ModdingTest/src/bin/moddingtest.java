@@ -1,0 +1,44 @@
+package bin;
+
+import java.io.*;
+
+public class moddingtest {	
+	public static void main(String[] args) {
+		//C:/Users/Garnet Grimm/Desktop/moddinggame
+		String path = java.nio.file.Paths.get("").toAbsolutePath().toString();
+		File[] pathSearch = null;
+		boolean modPathFound = false;
+		
+		//JUST TEST
+		mods.firstmod.onStart();
+		
+		try { 
+			pathSearch = new File(path + "/mods").listFiles();
+			modPathFound = true;
+		}
+		catch(Exception e) {
+			System.out.println("Mods folder not found!");
+		}
+		
+		if(modPathFound) {
+			for(int i = 0; i < pathSearch.length; i++) {
+				//REMOVE .JAVA AND RUN THE ON START METHOD
+				String s = pathSearch[i].getName();
+				System.out.println("found mod: " + s);
+				//THROWS ERROR
+				//try { Class c = Class.forName("mods." + s.substring(0, s.length() - 6)); }
+				//catch(ClassNotFoundException e) { e.printStackTrace(); }
+			}
+		}
+		
+		else {
+			System.out.println("Vinilla loaded");
+		}
+		System.out.println();
+		
+		item food = new item("Yummiez", 2, 18);
+		item notfood = new item("Gross", 10, 20);
+		
+		System.out.println(food.title + " " + notfood.xPos);
+	}
+}

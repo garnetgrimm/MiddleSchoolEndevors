@@ -1,0 +1,26 @@
+package main;
+
+import java.awt.Color;
+import java.awt.image.BufferedImage;
+
+public class ImageHandler {
+	public static String[][] ImageToArray(BufferedImage img) {
+		int w = img.getWidth();
+		int h = img.getHeight();
+		
+		String[][] pixels = new String[w][h];
+
+		for( int i = 0; i < w; i++ )
+		    for( int j = 0; j < h; j++ ) {
+		    	Color c = new Color(img.getRGB(i, j), true);
+	            int r = c.getRed();
+	            int g = c.getGreen();
+	            int b = c.getBlue();
+	            int a = c.getAlpha();
+	            String rgba = r + "," + g + "," + b + "," + a;
+	            System.out.println(rgba);
+		        pixels[i][j] = rgba;
+		    }
+		return pixels;
+	}
+}
